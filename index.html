@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Clothing store — browse the collection, save favourites and send an order request."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; img-src 'self' data: file: https://images.unsplash.com; font-src 'self' file:; style-src 'self' 'unsafe-inline' file:; script-src 'self' file:; base-uri 'none'; form-action 'none'"
+    />
+    <title>Ingoude — Collection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#app">Skip to content</a>
+    <header id="nav"></header>
+    <main id="app" tabindex="-1"></main>
+    <footer class="foot">
+      <div class="top">
+        <div class="logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2v20M3.300 7l17.400 10M3.300 17 20.700 7"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="none"
+            /></svg
+          ><span id="fb"></span>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#/catalog">Catalog</a><a href="#/wishlist">Wishlist</a
+          ><a href="#/profile">Profile</a><a href="#/info/contact">Contact</a
+          ><a href="#/info/shipping">Shipping</a
+          ><a href="#/info/returns">Returns</a
+          ><a href="#/info/privacy">Privacy</a><a href="#/info/terms">Terms</a>
+        </nav>
+      </div>
+      <p class="display" id="fd" aria-hidden="true"></p>
+      <small id="fl"></small>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
